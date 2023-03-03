@@ -23,7 +23,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 mongoose.set("strictQuery", false);
-mongoose.connect('mongodb://mymongo:27017/userDB')
+mongoose.connect('mongodb+srv://admin-vaibhav:Test123@cluster0.jprmrgj.mongodb.net/userDB')
 .then(()=>{console.log("DB Connected");})
 .catch((err)=>{console.log(err);});
 
