@@ -52,7 +52,7 @@ passport.use(
         {
             clientID: process.env.CLIENT_ID,
             clientSecret: process.env.CLIENT_SECRET,
-            callbackURL: "http://localhost:3000/auth/google/secrets",
+            callbackURL: "https://secrets2703.onrender.com/auth/google/secrets",
         },
         function (accessToken, refreshToken, profile, cb) {
             User.findOrCreate({ googleId: profile.id }, function (err, user) {
